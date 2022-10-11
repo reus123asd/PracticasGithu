@@ -218,7 +218,7 @@ const sumarGanancia = function (costo) {
 };
 
 // codear acá la solución del ejercicio
-const preciosFinales = costos.map((element) => element * 1.5 * 1.21);
+const preciosFinales = costos.map((element) => agregarIVA(sumarGanancia(element)));
 
 console.log(preciosFinales);
 
